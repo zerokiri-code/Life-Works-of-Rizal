@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Rizal's Community Works in Dapitan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #004d40;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .hero {
+            background: url('rizal-dapitan.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero-text h2 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .introduction, .community-works, .controversies, .timeline, .impact {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .community-works .work, .timeline-event {
+            margin-bottom: 2rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+            padding: 10px;
+            background-color: #e0f7fa;
+            border-radius: 8px;
+        }
+
+        .community-works .work:hover, .timeline-event:hover {
+            transform: scale(1.05);
+        }
+
+        .timeline {
+            background-color: #e8f5e9;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 10px;
+        }
+
+        .image-section {
+            margin-top: 2rem;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .work-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .text-section {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 2rem;
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+
+        .modal-content h2 {
+            color: #004d40;
+        }
+
+        .modal-close {
+            color: #004d40;
+            font-size: 1.5rem;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        /* Hidden by default */
+        .hidden {
+            display: none;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>José Rizal's Community Works in Dapitan</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About Rizal.html">About Rizal</a></li>
+                <li><a href="Works of Rizal.html">Rizal's Works</a></li>
+                <li><a href="Timeline.html">Timeline</a></li>
+                <li><a href="Impact.html">Impact on Dapitan</a></li>
+                <li><a href="Controversie.html">Controversies</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="timeline" id="timeline">
+        <h2>Timeline of José Rizal’s Life</h2>
+        <div class="timeline-event" onclick="openModal('timelineEvent1')">
+            <h3>1892 - Rizal’s Exile in Dapitan</h3>
+            <p> José Rizal arrives in Dapitan under Spanish orders, marking the beginning of his four-year exile. Though isolated from the country’s political movements, he quietly prepares to make an impact in his new community.</p>
+        </div>
+        <div class="timeline-event" onclick="openModal('timelineEvent2')">
+            <h3>1892–1896 - José Rizal Life in Dapitan</h3>
+            <p>Rizal leads a life of service in Dapitan. He establishes a school for young boys, builds a small hospital, and opens a farm. He uses his diverse skills to provide education, medicine, and engineering solutions to the town. His activities earn the respect of locals and foreign visitors alike. He also maintains communication with his family and fellow reformists, showing that he remains connected to the broader struggle for Philippine freedom.</p>
+        </div>
+        <div class="timeline-event" onclick="openModal('3')">
+            <h3>1896 - Arrest of José Rizal</h3>
+            <p>Rizal is summoned to return to Manila under the pretext of serving as a doctor in Cuba. Upon his arrival, he is arrested by Spanish authorities, accused of sedition and involvement with the revolutionary Katipunan movement—even though he advocated for peaceful reform</p>
+        </div>
+        <div class="timeline-event" onclick="openModal('timelineEvent4')">
+            <h3>December 30, 1896 - Execution of José Rizal</h3>
+            <p>Rizal is executed by firing squad in Luneta, Manila. His martyrdom stirs emotions across the nation, awakening a deeper desire for independence. His final act of bravery and his writings inspire generations to come. Even in death, Rizal continues to be a symbol of peaceful resistance and dedication to justice.</p>
+        </div>
+        <!-- Add more timeline events as necessary -->
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rizal Community Works in Dapitan | Designed by The Seven Deadly Boys</p>
+    </footer>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'flex';
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+    </script>
+</body>
+</html>

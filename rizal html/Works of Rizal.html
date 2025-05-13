@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Rizal's Community Works in Dapitan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #004d40;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .hero {
+            background: url('rizal-dapitan.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero-text h2 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .introduction, .community-works, .controversies, .timeline, .impact {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .community-works .work, .timeline-event {
+            margin-bottom: 2rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+            padding: 10px;
+            background-color: #e0f7fa;
+            border-radius: 8px;
+        }
+
+        .community-works .work:hover, .timeline-event:hover {
+            transform: scale(1.05);
+        }
+
+        .timeline {
+            background-color: #e8f5e9;
+        }
+
+        .image-section img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .image-section {
+            margin-top: 0.5rem;
+        }
+
+        .work-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .text-section {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 2rem;
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+
+        .modal-content h2 {
+            color: #004d40;
+        }
+
+        .modal-close {
+            color: #004d40;
+            font-size: 1.5rem;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        /* Hidden by default */
+        .hidden {
+            display: none;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>José Rizal's Community Works in Dapitan</h1>
+        <nav>
+            <ul>
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="About Rizal.html">About Rizal</a></li>
+              <li><a href="Works of Rizal.html">Rizal's Works</a></li>
+              <li><a href="Timeline.html">Timeline</a></li>
+              <li><a href="Impact.html">Impact on Dapitan</a></li>
+              <li><a href="Controversie.html">Controversies</a></li>
+            </ul>
+        </nav>
+    </header>
+  <section class="community-works">
+    <h2>Community Works</h2>
+
+    <a href="Works/Works Education.html" style="text-decoration: none; color: inherit;">
+        <div class="work">
+          <div class="work-content">
+            <div class="image-section">
+              <img src="images/RIZAL WORKS.jfif" alt="Rizal Education" />
+            </div>
+            <div class="text-section">
+              <h3>Education</h3>
+              <p>Rizal founded a school where he taught young boys subjects like reading, writing, Spanish, math, and moral values...</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      
+      <a href="Works/Works Healthcare.html" style="text-decoration: none; color: inherit;">
+    <div class="work">
+      <div class="work-content">
+        <div class="image-section">
+          <img src="images/RIZAL WORKS HEALTH CARE.jfif" alt="Rizal Healthcare" />
+        </div>
+        <div class="text-section">
+          <h3>Healthcare</h3>
+          <p>Rizal treated the sick using his medical expertise, especially in ophthalmology. He offered his services freely to the poor and performed surgeries, contributing greatly to the health of the local population during his exile in Dapitan.</p>
+        </div>
+      </div>
+    </a>
+</div>
+    <a href="Works/Works Agriculture.html" style="text-decoration: none; color: inherit;">
+    <div class="work">
+      <div class="work-content">
+        <div class="image-section">
+          <img src="images/WORK OF RIZAL AGRICULTURE.jpg" alt="Rizal Agriculture" />
+        </div>
+        <div class="text-section">
+          <h3>Agriculture</h3>
+          <p>Rizal improved farming practices by introducing modern techniques and tools. He cultivated his own land and taught others to be self-sufficient, helping uplift the economic state of Dapitan through sustainable agriculture.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+    <a href="Works/Works Architech.html" style="text-decoration: none; color: inherit;">
+      <div class="work">
+        <div class="work-content">
+          <div class="image-section">
+            <img src="images/arch.jpg" alt="engineer" />
+          </div>
+          <div class="text-section">
+            <h3>Architech</h3>
+            <p>Rizal's architectural contributions during his exile in Dapitan reflect his eye for design, utility, and the harmonious blending of his environment with local materials. As an architect, Rizal focused on creating functional, aesthetically pleasing spaces that reflected his values of simplicity and sustainability.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+      <a href="Works/Works Engineer.html" style="text-decoration: none; color: inherit;">
+        <div class="work">
+          <div class="work-content">
+            <div class="image-section">
+              <img src="images/engineer.jpeg" alt="Rizal Agriculture" />
+            </div>
+            <div class="text-section">
+              <h3>Engineer</h3>
+              <p>During his exile in Dapitan, José Rizal demonstrated his engineering skills by solving practical problems that significantly improved the daily lives of the local community. His work in engineering focused on projects that had immediate, long-term benefits for the town’s infrastructure, public health, and economy.</p>
+            </div>
+          </div>
+        </a>
+  </section>
+  <footer>
+    <p>&copy; 2025 Rizal Community Works in Dapitan | Designed The Seven Deadly Boys</p>
+  </footer>
+</body>
+</html>
